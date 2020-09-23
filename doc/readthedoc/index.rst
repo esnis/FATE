@@ -38,7 +38,7 @@ https://fate.fedai.org
    :maxdepth: 3
    :caption: Develop
 
-   Develop Guide <doc/develop_guide>
+   Develop Guide <../develop_guide>
 
 .. toctree::
    :maxdepth: 3
@@ -51,4 +51,4 @@ https://fate.fedai.org
    :maxdepth: 2
    :caption: Materials
 
-   doc/materials
+   ../materials
