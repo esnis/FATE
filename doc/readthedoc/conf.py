@@ -15,7 +15,6 @@ import sys
 
 sys.path.insert(0, os.path.abspath('../..'))
 
-os.mkdir("_build_temp")
 print("sage sage sage")
 
 # -- Project information -----------------------------------------------------
@@ -77,5 +76,14 @@ def ultimateReplace(app, docname, source):
 
 
 def setup(app):
+    if not os.path.exists("_build_temp"):
+        import shutil
+        import tempfile
+        from pathlib import Path
+
+        with tempfile.TemporaryDirectory() as d:
+            shutil.copytree("../..", Path(d).joinpath("_build_temp"))
+            shutil.copytree(Path(d).joinpath("_build_temp"), "_build_temp")
+
     app.add_config_value('ultimate_replacements', {}, True)
     app.connect('source-read', ultimateReplace)
