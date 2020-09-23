@@ -30,7 +30,8 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx.ext.autodoc',
     'sphinx.ext.napoleon',
-    "autodocsumm"
+    'autodocsumm',
+    'recommonmark'
 ]
 
 autosummary_generate = True
@@ -59,8 +60,8 @@ html_static_path = ['doc/readthedoc/_static']
 html_context = {
     'css_files': [
         '_static/theme_overrides.css',  # override wide tables in RTD theme
-        ],
-     }
+    ],
+}
 add_module_names = False
 master_doc = 'index'
 
