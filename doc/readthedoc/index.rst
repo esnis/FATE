@@ -53,3 +53,9 @@ https://fate.fedai.org
    :caption: Materials
 
    _build_temp/doc/materials
+
+.. toctree::
+   :maxdepth: 2
+   :caption: aaaa
+
+   demo
